@@ -1,18 +1,19 @@
-# Web Development with Node & Express Notes & Sample App
+# Web Development with Node & Express - E.Brown
+#### Notes & Sample App
 
 This is a textbook for the Seattle Central's ITC230 class - Advanced JavaScript. 
 I will be posting my notes on this file, organized by chapters, and I code 
 along the book to create a sample app - Meadowlark Travel.
 
-Chapter 1 - Introducing Express
+## Chapter 1 - Introducing Express
 
 ...
 
-Chapter 2 - Getting Started with Node
+## Chapter 2 - Getting Started with Node
 
 ...
 
-##Chapter 3 - Saving time with Express
+## Chapter 3 - Saving time with Express
 
 This chapter starts with an attempt to explain what is the purpose of Express by
 introducing words such as scaffolding, collection of templates, boilerplate code, framework and mentioning Ruby on Rails as the pioneer.
@@ -31,7 +32,11 @@ So the route for the About page will work for /about, /About, /about/, /about?fo
 
 ### Views & Layouts
 
+* Express expects the views in a view folder, and the layouts(partials) 
+in a views/layouts folder
 * A view is what gets delivered to the user, and it does not have to be static
 * *View engines* (template engines) is what allows for dynamic views
     * The default engine Express uses is Jade. It has high lever of abstraction, no HTML.
     * The book uses another engine - Handlebars
+* The default extension handlebars uses is .handlebars, but that can be changed 
+and set to whatever we want.
