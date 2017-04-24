@@ -1,0 +1,15 @@
+{
+  "name": "meadowlark_travel",
+  "version": "1.0.0",
+  "description": "Sample application from E.Brown's book 'Web Development with Node & Express'",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gordana minovska",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0"
+  }
+}
