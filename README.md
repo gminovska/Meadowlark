@@ -40,3 +40,43 @@ in a views/layouts folder
     * The book uses another engine - Handlebars
 * The default extension handlebars uses is .handlebars, but that can be changed 
 and set to whatever we want.
+
+## Chapter 6 - The request and response objects
+
+* Anatomy of a URL string (URL - Uniform Resource Locator)
+* Ex: http://localhost:3000/about?key=value&name=John#history
+    1. **protocol** - http:// (or https, ftp, file etc.)
+    2. **hostname** - localhost (or www.google.com - the www is a sub-domain, 
+        the .com is a top-level domain)
+    3. **port** - by default, post 80 is used for http requests
+    4. **path** - typically what we care about and how we do the routing
+    5. **querystring** - starts after a ? and it is a key=value pair collection
+    6. **fragment** - this is not passed to the server, it is used by browsers
+
+* The HTTP protocol defines a collection of request methods (often referred to as HTTP
+verbs) that a client uses to communicate with a server. Far and away, the most common
+methods are GET and POST.
+
+* The combination of method, path, and querystring is what your app
+uses to determine how to respond.
+
+Request and response headers
+
+* Communicate metadata between the client and the server
+
+* The Content-Type response header is very important as it tells the browser which type of
+resource to expect so it knows how to render it. Without it the browser would have to make a guess.The file extension in the url is meaningless for the browser - if .img file is sent, the browser will not know it is an image unless it is specified in the header.
+
+Request Bodies
+
+* In addition to the request headers, a request can have a body (just like the body of a
+response is the actual content that’s being returned). Normal GET requests don’t have
+bodies, but POST requests usually do.
+
+* To make req.body available, you’ll need middleware that can parse the body(body-parser)
+
+The rest of this chapter talks about:
+* the most prominent methods and properties of the request and response object
+* where to look up more information (the Express documentation and GitHb repo)
+* (very useful) most common usage of Express, with examples (Boiling it Down, p.61)
+
